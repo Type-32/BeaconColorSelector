@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "beacon_color_selector",
+  "version": "${version}",
+  "name": "BeaconColorSelector",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Type-32/BeaconColorSelector"
+  },
+  "license": "MIT",
+  "icon": "assets/beacon_color_selector/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "cn.crtlprototypestudios.beacon_color_selector.client.BeaconColorSelectorClient"
+    ],
+    "main": [
+      "cn.crtlprototypestudios.beacon_color_selector.BeaconColorSelector"
+    ]
+  },
+  "mixins": [
+    "beacon_color_selector.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
